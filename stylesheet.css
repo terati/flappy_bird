@@ -14,7 +14,7 @@ canvas#TC {
 
 @font-face {
     font-family: "Kimberley";
-    src: url('../imgs/Ffont.TTF') format("truetype");
+    src: url('./imgs/Ffont.TTF') format("truetype");
 }
 
 h1 { 
