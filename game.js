@@ -98,7 +98,7 @@ class gameCanvas {
 
 
         //draws score 
-        ctx.font = "60px birdy_font";
+        ctx.font = "60px birdyFont";
         ctx.textAlign = "center"; 
         ctx.fillStyle = 'white';
         ctx.fillText(this.score, this.bwidth/2, this.bheight*1/5);
@@ -142,7 +142,7 @@ class gameCanvas {
         if (this.alphaflag == 2){
             ctx.drawImage(this.scoreboardim, 0, 0, this.scoreboardim.width, this.scoreboardim.height, canvas.width/2-this.scoreboardim.width/2, this.bheight*1/5-50, this.scoreboardim.width, this.scoreboardim.height);
             ctx.drawImage(this.replayim, 0, 0, this.replayim.width, this.replayim.height, canvas.width/2-this.replayim.width, 3*canvas.height/5, this.replayim.width*2, this.replayim.height*2);
-            ctx.font = "50px birdy_font";
+            ctx.font = "50px birdyFont";
             ctx.textAlign = "center"; 
             ctx.fillStyle = 'black';
             ctx.fillText(this.score, canvas.width/2, 1*canvas.height/5+45, this.bheight*1/5);
