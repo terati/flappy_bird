@@ -11,3 +11,24 @@ canvas#TC {
     margin: auto;
     display: block;
 }
+
+@font-face {
+    font-family: "Kimberley";
+    src: url('../imgs/Ffont.TTF') format("truetype");
+}
+
+h1 { 
+    text-align: center;
+    font-family: "Kimberley", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;;
+}
+
+
+.top {
+    position:relative;
+    z-index: -999999;
+    font-size: large;
+}
