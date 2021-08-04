@@ -13,13 +13,13 @@ canvas#TC {
 }
 
 @font-face {
-    font-family: "Kimberley";
-    src: url('./imgs/Ffont.TTF') format("truetype");
+    font-family: "birdy_font";
+    src: url( "./imgs/Ffont.TTF" ) format("truetype");
 }
 
 h1 { 
     text-align: center;
-    font-family: "Kimberley", sans-serif;
+    font-family: "birdy_font", Arial;
     color: white;
     letter-spacing: 2px;
     padding-bottom: 0px;
