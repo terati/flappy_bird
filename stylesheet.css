@@ -13,13 +13,13 @@ canvas#TC {
 }
 
 @font-face {
-    font-family: "birdy_font";
+    font-family: "birdyFont";
     src: url( "./imgs/Ffont.TTF" ) format("truetype");
 }
 
 h1 { 
     text-align: center;
-    font-family: "birdy_font", Arial;
+    font-family: "birdyFont", Arial;
     color: white;
     letter-spacing: 2px;
     padding-bottom: 0px;
@@ -28,7 +28,7 @@ h1 {
 
 
 .top {
-    position:relative;
+    position: relative;
     z-index: -999999;
     font-size: large;
 }
