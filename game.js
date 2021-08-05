@@ -126,7 +126,7 @@ class gameCanvas {
                     }
                 } else {
                     this.alphaflag = 2;
-                    // this.alpha = 0;
+                    drawLeaderBoard();
                 }
             }
         }
@@ -290,7 +290,8 @@ class birdy {
 function startGame() {
     Game = new gameCanvas('./imgs/background.png', './imgs/ground.png', './imgs/pipebottom.png', './imgs/pipetop.png');
     flappyBird = new birdy('./imgs/bird.png');
-    console.log("Starting...");
+    // console.log("Starting...");
+    document.getElementById('head1').innerHTML = "WOOHOO GOOO BIRDY!!"
     canvas = document.getElementById("TC");
     canvas.width = 480;
     canvas.height = 640;
@@ -306,6 +307,46 @@ clearCanvas = () => {
 
 stop = () => {
     clearInterval(this.interval);
+
+}
+
+var ldr_ID = 0;
+var boardarr = [];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const colrs = ["rgb(60, 60, 60)","rgb(80, 80, 80)","rgb(100, 100, 100)","rgb(120, 120, 120)","rgb(140, 140, 140)"];
+var top4 = [0,0,0,0];
+var enc = ["GOOD TRY!", "TRY AGAIN!", "PLAY AGAIN", "BETTER LUCK NEXT TIME", "AWW SHUCKS!", "SIGGHHHHSSS", "PLS NO BIRD ABUSE!"]
+drawLeaderBoard = () => {
+    //Deal with adding to the local leaderboard. 
+    const d = new Date();
+
+    top4[3] = Game.score;
+    top4 = top4.sort(function(a, b){return b-a});
+    document.getElementById('rightInnerGOLD').innerHTML = 'SCORE: '+top4[0];
+    document.getElementById('rightInnerSILVER').innerHTML = 'SCORE: '+top4[1];
+    document.getElementById('rightInnerBRONZE').innerHTML = 'SCORE: '+top4[2];
+
+    document.getElementById('head1').innerHTML = enc[Math.floor(Math.random()*7)];
+
+    var ls = document.getElementById('rightInnerContent2');
+    if (ls.childNodes.length == 5){
+        ls.removeChild(ls.childNodes[4]);
+    }
+    var div = document.createElement('div');
+    div.style.marginTop = "10px";
+    div.style.float = "left";
+    div.style.width = "300px";
+    div.style.padding = "10px 20px" ;
+    div.style.background = "rgb(240, 240, 240)";
+    div.style.color = "rgb(255, 255, 255)";
+    div.style.fontFamily = "birdyFont";
+    div.innerHTML = 'SCORE: '+ Game.score+' on  '+months[d.getMonth()].toUpperCase()+' '+d.getDate()+' at '+d.getHours()+':'+d.getMinutes()+'.'+d.getSeconds();
+    ls.insertBefore(div, ls.childNodes[0]);
+    // document.getElementById('rightInnerContent2').appendChild(div);
+
+    for (let i = 0; i < 5; i++){
+        ls.childNodes[i].style.background = colrs[i];
+    }
 }
 
 
@@ -330,6 +371,7 @@ window.addEventListener('mousedown', function keyHandler(e) {
     y = e.clientY - bx.top;
     //hovering over the replay button
     if (x > 125 && x < 230 && y > 385 && y < 435 && Game.alphaflag == 2){
+        console.log("HERE"); 
         stop();
         startGame();
     }

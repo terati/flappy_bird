@@ -7,14 +7,50 @@
 
 <body>
     <h1 id="head1">WELCOME! XD!</h1>
-    <div id="game">
-        <canvas id="TC">
-            <h1 class='top'>TEST</h1>     
-        </canvas>
-        
-        <script>
-            startGame();
-        </script>
+    <div id='mainContainer'>
+        <div class='cols' id="leftSect"> 
+            <div id="leftInnerContent">
+                THIS IS A FLAPPY BIRD IMPLEMENTATION CREATED BY TIMOTHY WITH VANILLA JAVASCRIPT. 
+                ADMITTEDLY, I'M ABSOLUTELY SO BAD AT THE REAL FLAPPY BIRD SO I MADE THE HITBOX IN THIS GAME 
+                A PIXEL(RED PIXEL) SO I COULD ACTUALLY DEBUG IT.
+                AT THE MOMENT, THIS IS NOT OPTIMIZED FOR NON-COMPUTERS. 
+                THANKS FOR VISITING!
+            </div>
+            <div id="leftInnerContent2">
+                TO PLAY, EITHER: 
+                <ul>
+                    <li>CLICK WITH MOUSE.</li>
+                    <li>PRESS THE SPACE BUTTON.</li>
+                </ul>
+                <img id="tapim" src='./imgs/tap.png' alt='Tap to Start!'>
+            </div>
+        </div>
+        <div class='cols' id="game">
+            <canvas id="TC"></canvas>
+            <script>
+                startGame();
+            </script>
+        </div>
+        <div class='cols' id="rightSect">
+            <div id='rightInnerContent'>
+                TOP THREE (LOCAL)
+            </div>
+            <div id='rightInnerGOLD'>
+                SCORE: 0
+            </div>
+            <div id='rightInnerSILVER'>
+                SCORE: 0
+            </div>
+            <div id='rightInnerBRONZE'>
+                SCORE: 0
+            </div>
+            <div id='rightInnerENCOMPASS2'>
+                LOCAL LEADERBOARD
+            </div>
+            <div id='rightInnerContent2'>
+
+            </div>
+        </div>
     </div>
 </body>
 
