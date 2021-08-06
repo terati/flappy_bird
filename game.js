@@ -326,7 +326,7 @@ drawLeaderBoard = () => {
     document.getElementById('rightInnerSILVER').innerHTML = 'SCORE: '+top4[1];
     document.getElementById('rightInnerBRONZE').innerHTML = 'SCORE: '+top4[2];
 
-    document.getElementById('head1').innerHTML = enc[Math.floor(Math.random()*7)];
+    document.getElementById('head1').innerHTML = enc[Math.floor(Math.random*7)];
 
     var ls = document.getElementById('rightInnerContent2');
     if (ls.childNodes.length == 5){
@@ -345,7 +345,7 @@ drawLeaderBoard = () => {
     // document.getElementById('rightInnerContent2').appendChild(div);
 
     for (let i = 0; i < 5; i++){
-        ls.childNodes[i].style.background = colrs[i];
+        ls.childNodes[i].style.background = "linear-gradient(to right, "+colrs[i]+", rgb(22, 20, 21))";
     }
 }
 

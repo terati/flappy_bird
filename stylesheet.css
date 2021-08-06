@@ -109,7 +109,7 @@ h1 {
     font-size: 15px;
     font-family: "birdyFont";
     color: rgb(0, 0, 0);
-    background-color: rgb(245, 255, 112);
+    background-image: linear-gradient(to right, rgb(245, 255, 112), rgb(22, 20, 21));
     min-height: 15px;
     width: 300px;
     padding: 20px;
@@ -120,7 +120,7 @@ h1 {
     font-size: 15px;
     font-family: "birdyFont";
     color: rgb(0, 0, 0);
-    background-color: rgb(184, 177, 162);
+    background-image: linear-gradient(to right, rgb(184, 177, 162),rgb(22, 20, 21));
     min-height: 15px;
     width: 300px;
     padding: 20px;
@@ -131,7 +131,7 @@ h1 {
     font-size: 15px;
     font-family: "birdyFont";
     color: rgb(0, 0, 0);
-    background-color: rgb(172, 152, 98);
+    background-image: linear-gradient(to right, rgb(172, 152, 98), rgb(22, 20, 21));
     min-height: 15px;
     width: 300px;
     padding: 20px;
