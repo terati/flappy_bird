@@ -57,6 +57,7 @@ h1 {
 
 
 #leftInnerContent {
+    border-radius: 0px 20px 0px 0px;
     float: right;
     font-size: 20px;
     font-family: "birdyFont";
@@ -68,6 +69,7 @@ h1 {
 }
 
 #leftInnerContent2 {
+    border-radius: 0px 20px 0px 0px;
     margin-top: 20px;;
     float: right;
     font-size: 20px;
@@ -87,6 +89,7 @@ h1 {
 }
 
 #rightInnerContent {
+    border-radius: 0px 20px 0px 0px;
     float: left;
     font-size: 20px;
     font-family: "birdyFont";
@@ -97,7 +100,6 @@ h1 {
 }
 
 #rightInnerContent2 {
-
 }
 
 
@@ -136,6 +138,7 @@ h1 {
 }
 
 #rightInnerENCOMPASS2 {
+    border-radius: 0px 20px 0px 0px;
     margin-top: 50px;
     float: left;
     font-size: 20px;
