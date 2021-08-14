@@ -326,7 +326,7 @@ drawLeaderBoard = () => {
     document.getElementById('rightInnerSILVER').innerHTML = 'SCORE: '+top4[1];
     document.getElementById('rightInnerBRONZE').innerHTML = 'SCORE: '+top4[2];
 
-    document.getElementById('head1').innerHTML = enc[Math.floor(Math.random*7)];
+    document.getElementById('head1').innerHTML = enc[Math.floor(Math.random()*7)];
 
     var ls = document.getElementById('rightInnerContent2');
     if (ls.childNodes.length == 5){
@@ -371,7 +371,6 @@ window.addEventListener('mousedown', function keyHandler(e) {
     y = e.clientY - bx.top;
     //hovering over the replay button
     if (x > 125 && x < 230 && y > 385 && y < 435 && Game.alphaflag == 2){
-        console.log("HERE"); 
         stop();
         startGame();
     }
